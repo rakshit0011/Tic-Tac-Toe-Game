@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url("./images/login.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+        .login{
+            margin-top: 28vh;
+        }
+        .Player{
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+            height: 50px;
+            width: 400px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+     .Player:hover{
+         background-color:orange;
+         color: white;
+     }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: orange;
+            font-family: cursive;
+        }
+        #loginBtn{
+            display: block;
+            margin: auto;
+            width: 90px;
+            height: 55px;
+            background: linear-gradient(orange,red);
+            color: white;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+        #loginBtn:hover{
+            cursor: pointer;
+            background: linear-gradient(green,yellow);
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter player names</h1>
+    <div class="login">
+        <input class="Player" type="text" name="Player1" id="Player1" placeholder="Enter your name">
+        <input class="Player" type="text" name="Player2" id="Player2" placeholder="Enter your name">
+        <button id="loginBtn">
+            Login
+        </button>
+    </div>
+    <script>
+      
+        var playerName1 = document.getElementById("Player1");
+        var playerName2 = document.getElementById("Player2");
+        var btn = document.getElementById("loginBtn");
+        btn.addEventListener("click",()=>{
+            if(playerName1.value==""||playerName2.value==""){
+                alert("Please enter your name");
+            }
+            else{
+                sessionStorage.setItem("Player1",playerName1.value);
+                sessionStorage.setItem("Player2",playerName2.value);
+                window.open("./game.html","_self");
+            }
+        
+        })
+    </script>
+</body>
+</html>
