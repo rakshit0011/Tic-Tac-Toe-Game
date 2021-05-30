@@ -1,0 +1,24 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "A tic tac toe game",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r4ksh1t0011/TicTacToe.git"
+  },
+  "author": "Rakshit Awasthi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r4ksh1t0011/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/r4ksh1t0011/TicTacToe#readme"
+}

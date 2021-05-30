@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="css/game.css">
+    <style>
+        body{
+    background-image: url("./images/img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 150vh;
+}
+    </style>
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
     <button id="reset">Reset</button>    
-    <button id="exit">Exit</button>
+    <form action="/game.html" method="post">
+        <input type="submit" value="Exit" id="exit">
+    </form>
     </table>
     <!-- The gameplay grid -->
     <table class="grid">
@@ -44,6 +53,6 @@
    <td id="player2">Player2</td>
    <td id="score2">0</td>
     </tr>
-        <script src="./game.js"></script>
+        <script src="js/game.js"></script>
 </body>
 </html>
